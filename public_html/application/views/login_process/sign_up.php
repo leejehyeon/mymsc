@@ -7,7 +7,7 @@
 	</div>
 	<div>
 		<form name="insert_form" method="post" >
-			<fieldset>
+			<!--<fieldset>-->
 			<div class='homepageguide_input_style'>
 				<table>
 						<fieldset>
@@ -15,7 +15,7 @@
 						<td><span>아이디</span></td>
 						<td><input type="text" name="user_id" id="user_id" value="<?php echo set_value("user_id"); ?>"/></td>
 						<!--<td><input type="submit" value="중복 체크" onclick="submitForm1();"></td>-->
-						<td><p class="help-block"><?php echo form_error("user_id");?></p></td>
+						<td><!--<p class="help-block"><?php echo form_error("user_id");?></p>--></td>
 					</tr>
 					<tr>
 						<td><span style=" color: red; font-size: 11px; ">*아이디는 5~12자 이내로</br>입력해주세요.</span></td>
@@ -104,7 +104,7 @@
 					<td><input type="button" value="뒤로가기" onclick="javascript:history.back();"></td>
 				</table>
 			</div>
-			</fieldset>
+			<!--</fieldset>-->
 		</form>
 	</div>
 </div>

@@ -65,7 +65,7 @@
 	<div class="row">
 		<div class="col-xs-2 col-xs-offset-10">
 			<button id="write" type='button'>
-				<a href="/index.php/lesson/reinforce">글쓰기</a>
+				<a href="/index.php/lesson/enrichment_study/reinforce">글쓰기</a>
 			</button>
 		</div>
 	</div>

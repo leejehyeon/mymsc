@@ -1,10 +1,11 @@
-<div class="col-xs-7">
-	<form action='/index.php/reinforce' method='post'>
-		<div style="text-align:center">
-			<p style="font-size:18px;"><strong>보　강　계　획　서</strong></p>
-		</div>
+<div class="col-xs-9">
+<form action='/index.php/lesson/enrichment_study_admin/reinforce' method='post'>
+	<fieldset>
+<div>
+    <p style="font-size:18px; text-align:center"><strong>보　강　계　획　서</strong></p>
+	</div>
 	<div style="text-align:center">
-		<table style="border:1px solid #000000; margin:0px 0px 20px 180px">
+		<table style="margin:0px 0px 20px 0px; text-align:center">
 			<tr>
 				<td rowspan="2" style="background-color:RGB(127,127,127); border:1px solid #000000">
                     <p><strong>교 과 목 명</strong></p>
@@ -18,52 +19,52 @@
 			</tr>
 			<tr>
 				
-				<td style="background-color:RGB(127,127,127);border:1px solid #000000">
-                    <p style="margin:5px;"><strong>날짜</strong></p>
+				<td style="background-color:RGB(127,127,127);border:1px solid #000000;">
+                    <p style="margin:5px; width:150px;"><strong>날짜</strong></p>
 				</td>
-				<td style="background-color:RGB(127,127,127);border:1px solid #000000">
-                    <p style="margin:5px;"><strong>시간</strong></p>
+				<td style="background-color:RGB(127,127,127);border:1px solid #000000;">
+                    <p style="margin:5px; width:220px;"><strong>시간</strong></p>
 				</td>
-				<td style="background-color:RGB(127,127,127);border:1px solid #000000">
-                    <p style="margin:5px;"><strong>강의실</strong></p>
+				<td style="background-color:RGB(127,127,127);border:1px solid #000000;">
+                    <p style="margin:5px; width:100px;"><strong>강의실</strong></p>
 				</td>
 				
 			</tr>
 			<tr>
 				
 				<td style="border:1px solid #000000">
-                    <input type='text' name='subject'/>
+                    <input type='edit' name='subject' id="subject" style="border:0px; height:62px; margin:0px; padding:0px"/>
 				</td>
 				<td style="border:1px solid #000000">
-                    <input type='edit' name='reason'/>
+                    <textarea name='reason' style="border:0px; height:62px; margin:0px; padding:0px"></textarea>
 				</td>
-				<td style="border:1px solid #000000">
+				<td style="border:1px solid #000000;">
 					 <select name="month" style="width:60px;">
         <option value="">월</option>                 
-		<option value="1">1월</option>
-		<option value="2">2월</option>
-		<option value="3">3월</option>
-		<option value="4">4월</option>
-		<option value="5">5월</option>
-		<option value="6">6월</option>
-		<option value="7">7월</option>
-		<option value="8">8월</option>
-		<option value="9">9월</option>
+		<option value="01">1월</option>
+		<option value="02">2월</option>
+		<option value="03">3월</option>
+		<option value="04">4월</option>
+		<option value="05">5월</option>
+		<option value="06">6월</option>
+		<option value="07">7월</option>
+		<option value="08">8월</option>
+		<option value="09">9월</option>
         <option value="10">10월</option>
 		<option value="11">11월</option>
 		<option value="12">12월</option>
 	</select>
                     <select name="day" style="width:60px;">
         <option value="">일</option>                 
-		<option value="1">1일</option>
-		<option value="2">2일</option>
-		<option value="3">3일</option>
-		<option value="4">4일</option>
-		<option value="5">5일</option>
-		<option value="6">6일</option>
-		<option value="7">7일</option>
-		<option value="8">8일</option>
-		<option value="9">9일</option>
+		<option value="01">1일</option>
+		<option value="02">2일</option>
+		<option value="03">3일</option>
+		<option value="04">4일</option>
+		<option value="05">5일</option>
+		<option value="06">6일</option>
+		<option value="07">7일</option>
+		<option value="08">8일</option>
+		<option value="09">9일</option>
         <option value="10">10일</option>              
 		<option value="11">11일</option>
 		<option value="12">12일</option>
@@ -88,7 +89,7 @@
         <option value="31">31일</option>
 	</select>
 				</td>
-								<td style="border:1px solid #000000">
+								<td style="border:1px solid #000000;">
 										 <select name="startTime" style="width:90px;" >
         <option value="">시작시간</option>                 
 		<option value="9">09:00</option>
@@ -133,8 +134,16 @@
 	</select>
 				</td>
 				<td style="border:1px solid #000000">
-					<input type='edit' name='classroom' style="width:100px;"/>
+					<input type='edit' name='classroom' style="border:0px; height:62px; margin:0px; padding:0px; width:100px"/>
 				</td>
+			</tr>
+			
+			<tr>
+				<td style="font-size:10px; padding-top:20px"><?php echo form_error("subject"); ?></td>
+				<td style="font-size:10px; padding-top:20px"><?php echo form_error("reason"); ?></td>
+				<td style="font-size:10px; padding-top:20px"><?php echo form_error("month"); echo form_error("day"); ?></td>
+				<td style="font-size:10px; padding-top:20px"><?php echo form_error("startTime"); echo form_error("endTime"); ?></td>
+				<td style="font-size:10px; padding-top:20px"><?php echo form_error("classroom"); ?></td>
 			</tr>
 		</table>
 	</div>
@@ -144,4 +153,6 @@
 	<div style="text-align:right">
 		<input type='submit' value="제출하기">
 	</div>
+	</fieldset>
 	</form>
+</div>
