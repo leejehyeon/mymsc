@@ -1,3 +1,10 @@
+@font-face{
+	font-family : "Daum_Regular";
+	font-style: normal;
+    font-weight: normal;
+    src: url('/static/fonts/Daum_Regular.ttf');
+   }
+
 .input-td {
 	height:30;
 	border-bottom:solid 1px;
@@ -14,3 +21,76 @@
 	border: 1px solid #535353;
 	text-align: center;
 }
+
+.sidebar{
+	background-color:#2eaae0;
+	float:left;
+	font-family:"Daum_Regular" !important;
+	height:675px;
+	margin:12px 0px 12px 90px;
+	width:220px;
+}
+
+.sidebar_title{
+	background:url('/static/img/sidebar_background.png') no-repeat 5px;
+	color:#ffffff;
+	font-size:30px;
+	/*font-weight:300;*/
+	height:70px;
+	/*margin:16px 0px 0px 16px*/
+	padding:14px 0px 0px 0px;
+	margin:20px 11px 23px 11px;
+	text-align:center;
+}
+
+.sidebar_ul{
+	margin:0px 0px 0px 50px;
+	padding:0px;text-decoration:underline;
+}
+.sidebar_list{
+	background:url('/static/img/list_style_square.png') no-repeat 29px 8px;
+	color:#ffffff;
+	font-size:18px;
+	list-style:none;
+	margin:0px 0px 15px 0px;
+	padding:0px 0px 0px 49px;
+	
+}
+
+.sidebar_list_select{
+	background:url('/static/img/list_style_square.png') no-repeat 29px 8px;
+	color:#ffffff;
+	font-size:18px;
+	list-style:none;
+	margin:0px 0px 15px 0px;
+	padding:6px 0px 3px 49px;
+}
+
+.each_page{
+	width:790px;
+}
+
+.page_title_area{
+	background:url('/static/img/page_title_square.png') no-repeat 29px 23px;
+	border-top:1px solid #2eaae0;
+	border-bottom:1px solid #2eaae0;
+	color:#2eaae0;
+	float:left;
+	font-size:30px;
+	font-family:"Daum_Regular" !important;
+	margin:37px 0px 23px 15px;
+	padding:9px 0px 9px 0px;
+	width:790px;
+}
+
+.page_title{
+	margin:0px;
+	padding-left:60px;
+}
+.underline_title{
+	line-height:15px;
+	border-bottom:2px solid #97d5f0;
+	padding:0px;
+	margin:0px;
+}
+

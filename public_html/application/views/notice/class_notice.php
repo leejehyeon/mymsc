@@ -1,4 +1,4 @@
-<div class="col-xs-7">
+<div class="each_page">
 	<table>
 		<thead>
 			<tr>
